@@ -1,0 +1,49 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.comment {
+    background-color: #cdcdcd;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.comment__details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment__contents {
+    width: 80%;
+}
+
+.comment__approval {
+    border-left: 1px solid rgb(168, 168, 168);
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.comment__approvalButton {
+    color: white;
+    padding: 10px;
+    font-family: monospace;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+}
+
+.comment__approvalButton--approved {
+    background-color: rgb(182, 20, 20);
+}
+.comment__approvalButton--awaiting {
+    background-color: rgb(23, 182, 20);
+}
